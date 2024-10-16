@@ -204,7 +204,7 @@ def main():
             ]
             
             # Create a sanitized filename
-            nombre_archivo = f"calendario_{equipo.lower().replace(' ', '_')}.ics"
+            nombre_archivo = f"Equipos/calendario_{equipo.lower().replace(' ', '_')}.ics"
             
             # Pass the filtered DataFrame to pasar_a_ical with the team name
             pasar_a_ical(partidos_equipo, nombre_archivo)
@@ -221,7 +221,7 @@ def main():
         partidos_division = partidos_df[partidos_df['División'] == division]
         
         # Crear un nombre de archivo sanitizado
-        nombre_archivo = f"calendario_{division.replace(' ', '_')}.ics"
+        nombre_archivo = f"Divisiones/calendario_{division.replace(' ', '_')}.ics"
         
         # Pasar el DataFrame filtrado a pasar_a_ical con el nombre de la división
         pasar_a_ical(partidos_division, nombre_archivo)
